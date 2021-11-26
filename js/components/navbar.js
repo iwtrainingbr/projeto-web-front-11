@@ -6,6 +6,9 @@ function navbar() {
       <button class="btn btn-outline-dark" onclick="changeContent('settings')">Configurações</button>
       <button class="btn btn-outline-dark" onclick="changeContent('chagas')">Chagas</button>
       <button class="btn btn-outline-dark" onclick="changeContent('contact')">Contato</button>
+      <button class="btn btn-outline-dark" onclick="changeContent('mikael')">Contato</button>
+
+      <button class="btn btn-outline-dark" onclick="changeContent('help')">Help</button>
     </nav>
   `;
 }
