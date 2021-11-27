@@ -2,7 +2,7 @@ function perguntas(){
   return `
   ${navbar()}
   <br>
-  <form class=>
+  <form>
     <div>
       <label>CATEGORIAS</label>
     <br>
