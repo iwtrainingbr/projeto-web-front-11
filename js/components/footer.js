@@ -1,3 +1,3 @@
 function footer() {
-  return `<p></p>`;
+  return `<p>rodapé</p>`;
 }

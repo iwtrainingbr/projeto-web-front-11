@@ -10,8 +10,8 @@ function profile() {
         <div class="col-6">
             <form action="#" method="post" id="form-card">
 
-              <label for="form-titular">Nome do usuário</label> <br>
-              <input class="form-control" placeholder="Chiquim da Silva" id="form-titular" name="titular">
+              <label for="form-usuario">Nome do usuário</label> <br>
+              <input class="form-control" placeholder="Paulo Junior" id="form-usuario" name="usuario">
               <br>
 
               <label for="form-email">Email do usuário</label> <br>
@@ -25,7 +25,9 @@ function profile() {
 
               <button class="btn btn-outline-dark">Salvar alterações</button>
 
-
+              </div>
+              </form>
+              </section>
 
       <hr>
 
