@@ -13,6 +13,7 @@ function navbar() {
       <button class="btn btn-outline-dark" onclick="changeContent('mikael')">Mikael</button>
       <button class="btn btn-outline-dark" onclick="changeContent('help')">Help</button>
       <button class="btn btn-outline-dark" onclick="changeContent('questions')">Perguntas</button>
+      <button class="btn btn-outline-dark" onclick="changeContent('perguntas')">Cadastrar Pergunta</button>
       <button class="btn btn-outline-dark" onclick="changeContent('cadastrarcategoria')">Cadastar Categoria</button>
       <button class="btn btn-outline-dark" onclick="changeContent('berg')">berg</button>
     </nav>
