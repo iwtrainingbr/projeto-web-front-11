@@ -12,7 +12,11 @@ function navbar() {
       <button class="btn btn-outline-dark" onclick="changeContent('mariana')">Saiba Mais</button>
       <button class="btn btn-outline-dark" onclick="changeContent('mikael')">Mikael</button>
       <button class="btn btn-outline-dark" onclick="changeContent('help')">Help</button>
+<<<<<<< HEAD
       <button class="btn btn-outline-dark" onclick="changeContent('questions')">Perguntas</button>
+=======
+      <button class="btn btn-outline-dark" onclick="changeContent('berg')">berg</button>
+>>>>>>> 5873076601715944a90a6f37058a57353668989b
     </nav>
   `;
 }
