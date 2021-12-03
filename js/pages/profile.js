@@ -9,6 +9,9 @@ function profile() {
       <section class="row">
         <div class="col-6">
             <form action="#" method="post" id="form-card">
+            <div class="col-md-6">
+            <img src="img/gato.jpg" width = '100%' ">
+            </div>
 
               <label for="form-usuario">Nome do usuário</label> <br>
               <input class="form-control" placeholder="Paulo Junior" id="form-usuario" name="usuario">
