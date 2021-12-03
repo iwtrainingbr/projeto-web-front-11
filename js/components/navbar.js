@@ -23,6 +23,16 @@ function navbar() {
           <li><a class="dropdown-item" onclick="changeContent('questions')" href="#">Listar</a></li>
         </ul>
       </div>
+
+      <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Cidades
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="changeContent('addCity')" href="#">Nova</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('listCities')" href="#">Listar</a></li>
+        </ul>
+      </div>
     </nav>
   `;
 }
