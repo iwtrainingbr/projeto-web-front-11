@@ -6,7 +6,7 @@ const saveCity = () => {
     state: document.getElementById('city_uf').value,
   };
 
-  fetch(API_URL.'/cities.json', {
+  fetch(API_URL'/cities.json', {
     method: 'POST',
     body: JSON.stringify(newCity),
   });
