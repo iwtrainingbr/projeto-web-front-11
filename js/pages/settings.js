@@ -3,7 +3,7 @@ function settings() {
       ${navbar()}
 
       <hr>
-      <div>Pagina de Configurações</div>
+      <h2>Pagina de Configurações</h2>
       <hr>
 
       ${footer()}

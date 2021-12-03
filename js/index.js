@@ -1,5 +1,5 @@
-function changeContent(pageName) {
-  document.getElementById('main').innerHTML = window[pageName]();
+function changeContent(pagename) {
+  document.getElementById('main').innerHTML = window[pagename]();
 }
 
 changeContent('home');
