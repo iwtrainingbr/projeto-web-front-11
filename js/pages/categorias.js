@@ -1,34 +1,42 @@
 function categorias() {
-  return`
-${navbar()}
+  fetch (API_URL+'/categories.json')
+    .then(response => response.json())
+    .then(categorias => {
+      for (let id in categorias) {
+        document.getElementById('table_categorias').innerHTML += `
+          <tr>
+            <td>${categorias[id].name}</td>
+            <td>${categorias[id].description}</td>
+            <td>
+              <button class='btn bg-warning'>Editar</button>
+              <button class='btn btn-danger'>Excluir</button>
+            </td>
+          </tr>
+        `;
+      }
+    });
 
-<form class="mt-3" #="/pagina-processa-dados-do-form" method="post">
-    <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nomee" />
-    </div>
-<br>
-    <div>
-        <label for="Descrição">Descrição:</label>
-        <input type="descrição" id="descrição" />
-    </div>
-<br>
+  return `
+    ${navbar()}
+    <hr>
+    <h1>Listar Categorias</h1>
+    <hr>
 
-    <button class="btn btn-success">Editar</button>
-    <button class="btn btn-danger">Excluir</button>
+    <section class="card card-body">
+      <table class="table table-hover table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
 
-    <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-</form>
-<br>
+          </tr>
+        </thead>
 
-${footer()}
+        <tbody id="table_categorias">
+
+        </tbody>
+      </table>
+    </section>
   `;
-
 }
