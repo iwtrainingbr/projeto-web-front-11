@@ -1,33 +1,35 @@
-const saveCity = () => {
+const addUser = () => {
   event.preventDefault();
 
-  let newCity = {
-    name: document.getElementById('city_name').value,
-    state: document.getElementById('city_uf').value,
+  let addUser = {
+    photo: document.getElementById('photo').value,
+    name: document.getElementById('name').value,
+    city: document.getElementById('city').value,
+    status: document.getElementById('status').value,
   };
 
-  fetch(API_URL+'/cities.json', {
+  fectch(API_URL+'addUser.json', {
     method: 'POST',
-    body: JSON.stringify(newCity),
+    body: JSON.stringfy(newUser),
   });
 
-  alert('Pronto, nova cidade inserida');
+  alert('Novo usuário cadastrado');
 
-  document.getElementById('form_city').reset();
+  document.getElementById('form_user').reset();
 };
 
-function addCity() {
+function addUser() {
 
   return `
     ${navbar()}
     <hr>
-    <h1>Adicionar Cidade</h1>
+    <h1>Adicionar Usuários</h1>
     <hr>
 
     <section class="row">
       <div class="col-6">
         <div class="card card-body">
-          <form method="post" action="#" id="form_city" onsubmit="saveCity()">
+          <form method="post" action="#" id="form_user" onsubmit="saveUser()">
             <label for="city_name">Nome</label>
             <input id="city_name" class="form-control mb-3" placeholder="Nome da Cidade" required>
             <br>
