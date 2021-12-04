@@ -34,7 +34,7 @@ function navbar() {
         </ul>
       </div>
       <div class="btn-group">
-        <button class="btn btn-danger" onclick="changeContent('logout')" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-danger" onclick="changeContent('login')" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
           Sair
         </button>
       </div>
