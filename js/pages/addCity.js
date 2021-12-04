@@ -1,24 +1,24 @@
 const saveCity = () => {
-  event.preventDefault();
+    event.preventDefault();
 
-  let newCity = {
-    name: document.getElementById('city_name').value,
-    state: document.getElementById('city_uf').value,
-  };
+    let newCity = {
+        name: document.getElementById('city_name').value,
+        state: document.getElementById('city_uf').value,
+    };
 
-  fetch(API_URL+'/cities.json', {
-    method: 'POST',
-    body: JSON.stringify(newCity),
-  });
+    fetch(API_URL + '/cities.json', {
+        method: 'POST',
+        body: JSON.stringify(newCity),
+    });
 
-  alert('Pronto, nova cidade inserida');
+    alert('Pronto, nova cidade inserida');
 
-  document.getElementById('form_city').reset();
+    document.getElementById('form_city').reset();
 };
 
 function addCity() {
 
-  return `
+    return `
     ${navbar()}
     <hr>
     <h1>Adicionar Cidade</h1>

@@ -1,5 +1,5 @@
 function navbar() {
-  return `
+    return `
     <nav class="text-end">
       <button class="btn btn-outline-dark" onclick="changeContent('home')">Inicio</button>
       <button class="btn btn-outline-dark" onclick="changeContent('profile')">Meu Perfil</button>
@@ -34,6 +34,11 @@ function navbar() {
           <li><a class="dropdown-item" onclick="changeContent('addCity')" href="#">Nova</a></li>
           <li><a class="dropdown-item" onclick="changeContent('listCities')" href="#">Listar</a></li>
         </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-danger" onclick="changeContent('login')" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
+          Sair
+        </button>
       </div>
     </nav>
 
