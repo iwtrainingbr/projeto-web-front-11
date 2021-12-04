@@ -1,19 +1,40 @@
 function navbar() {
     return `
     <nav class="text-end">
-      <button class="btn btn-outline-dark" onclick="changeContent('home')">Inicio</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('profile')">Meu Perfil</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('settings')">Configurações</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('contact')">Contato</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('tubarao')">Tubarao</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('categorias')">Categorias</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('carliane')">Carliane</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('mariana')">Saiba Mais</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('mikael')">Mikael</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('users')">Usuários</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('help')">Help</button>
-      <button class="btn btn-outline-dark" onclick="changeContent('cadastrarcategoria')">Cadastar Categoria</button>
-
+      <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Meu Perfil
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="changeContent('profile')" href="#">Meu perfil</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('contact')" href="#">Contato</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('users')" href="#">Usuário</a></li>
+        </ul>
+      </div>
+      
+      <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Configurações         
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="changeContent('settings')" href="#">Configurações</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('home')" href="#">Inicio</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('mariana')" href="#">Saiba Mais</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('help')" href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      
+      <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Cadastrar Categorias
+          
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="changeContent('cadastrarcategoria')" href="#">Nova</a></li>
+          <li><a class="dropdown-item"onclick="changeContent('categorias')" href="#">Listar</a></li>
+        </ul>
+      </div>
+      
       <div class="btn-group">
         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Perguntas
@@ -34,14 +55,13 @@ function navbar() {
           <li><a class="dropdown-item" onclick="changeContent('addCity')" href="#">Nova</a></li>
           <li><a class="dropdown-item" onclick="changeContent('listCities')" href="#">Listar</a></li>
         </ul>
-      </div>
+      </div>    
+    
       <div class="btn-group">
         <button class="btn btn-danger" onclick="changeContent('login')" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
           Sair
         </button>
       </div>
     </nav>
-
-
   `;
 }
