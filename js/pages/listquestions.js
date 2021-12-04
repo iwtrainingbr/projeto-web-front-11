@@ -1,14 +1,14 @@
-function categorias() {
-  fetch (API_URL+'/categories.json')
+function listQuestions() {
+  fetch (API_URL+'/questions.json')
     .then(response => response.json())
-    .then(categorias => {
-      for (let id in categorias) {
-        document.getElementById('table_categorias').innerHTML += `
+    .then(questions => {
+      for (let id in questions) {
+        document.getElementById('table_questions').innerHTML += `
           <tr>
-            <td>${categorias[id].name}</td>
-            <td>${categorias[id].description}</td>
+            <td>${questions[id].name}</td>
+            <td>${questions[id].category}</td>
             <td>
-              <button class='btn bg-warning'>Editar</button>
+              <button class='btn btn-dark'>Editar</button>
               <button class='btn btn-danger'>Excluir</button>
             </td>
           </tr>
@@ -19,7 +19,7 @@ function categorias() {
   return `
     ${navbar()}
     <hr>
-    <h1>Listar Categorias</h1>
+    <h1>Listar Perguntas</h1>
     <hr>
 
     <section class="card card-body">
@@ -27,13 +27,12 @@ function categorias() {
         <thead class="table-dark">
           <tr>
             <th>Nome</th>
-            <th>Descrição</th>
+            <th>Categoria</th>
             <th>Ações</th>
-
           </tr>
         </thead>
 
-        <tbody id="table_categorias">
+        <tbody id="table_questions">
 
         </tbody>
       </table>

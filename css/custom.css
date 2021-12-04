@@ -1,3 +1,23 @@
 body {
-  background-color: #DEDEDE;
+    background-color: #DEDEDE;
+}
+
+.login {
+    background-color: #00E6F0;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 27rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.27);
+}
+
+img {
+    width: 14rem;
 }
