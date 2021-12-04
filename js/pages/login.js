@@ -1,5 +1,5 @@
 function login() {
-    return `  
+    return `
     <form class="bg-white p-3 login" onsubmit="changeContent('login')">
 
         <div><img src="img/we_match!02.png" class="mx-auto d-block mt-3 pt-3"></div>
@@ -8,10 +8,14 @@ function login() {
         <h6 class="text-center">Ir para o We Match!</h5><br>
 
         <div class="mb-3">
-            <label for="#" class="form-label">nome@examplo.com</label>
+            <label for="#" class="form-label">Email</label>
             <input type="email" class="form-control" id="#" placeholder="nome@examplo.com">
         </div>
 
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha">
+        </div>
         <button class="btn btn-info btn-lg float-end" onclick="changeContent('home')">Enviar</button><br><br>
 
 
