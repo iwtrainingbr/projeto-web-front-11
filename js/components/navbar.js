@@ -21,6 +21,8 @@ function navbar() {
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" onclick="changeContent('perguntas')" href="#">Nova</a></li>
           <li><a class="dropdown-item" onclick="changeContent('listQuestions')" href="#">Listar</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('addQuestions')" href="#">Nova</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('questions')" href="#">Listar</a></li>
         </ul>
       </div>
 
@@ -34,5 +36,7 @@ function navbar() {
         </ul>
       </div>
     </nav>
+
+
   `;
 }
