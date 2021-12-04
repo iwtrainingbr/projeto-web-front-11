@@ -6,7 +6,7 @@ const saveCity = () => {
     state: document.getElementById('city_uf').value,
   };
 
-  fetch(API_URL.'/cities.json', {
+  fetch(API_URL+'/cities.json', {
     method: 'POST',
     body: JSON.stringify(newCity),
   });
@@ -41,9 +41,6 @@ function addCity() {
         </div>
       </div>
 
-      <div class="col-6">
-        <img src="img/city/cities.svg" alt="" width="80%">
-      </div>
     </section>
   `;
 }
