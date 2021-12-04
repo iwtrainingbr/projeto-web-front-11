@@ -2,8 +2,8 @@ const saveQuestions = () => {
   event.preventDefault();
 
   let newQuestions = {
-    categoria: document.getElementById('questions_category').value,
-    pergunta: document.getElementById('questions_questions').value
+    category: document.getElementById('questions_category').value,
+    name: document.getElementById('questions_questions').value
   };
 
   fetch(API_URL+'/questions.json', {
