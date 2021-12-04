@@ -41,9 +41,6 @@ function addCity() {
         </div>
       </div>
 
-      <div class="col-6">
-        <img src="img/city/cities.svg" alt="" width="80%">
-      </div>
     </section>
   `;
 }
