@@ -8,8 +8,8 @@ function listCities() {
             <td>${cities[id].name}</td>
             <td>${cities[id].state}</td>
             <td>
-              <button>Editar</button>
-              <button>Excluir</button>
+              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-danger">Excluir</button>
             </td>
           </tr>
         `;
