@@ -15,12 +15,6 @@ const removeQuestion = (id) => {
 
       for (let id in questions) {
         document.getElementById('table_questions').innerHTML += `
-function listQuestions() {
-    fetch(API_URL + '/questions.json')
-        .then(response => response.json())
-        .then(questions => {
-            for (let id in questions) {
-                document.getElementById('table_questions').innerHTML += `
           <tr>
             <td>${questions[id].name}</td>
             <td>${questions[id].category}</td>
@@ -35,13 +29,6 @@ function listQuestions() {
   }
 function listQuestions (){
    findQuestions ();
-              <button class='btn btn-dark' data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
-              <button class='btn btn-danger'>Excluir</button>
-            </td>
-          </tr>
-        `;
-            }
-        });
 
     return `
     ${navbar()}
