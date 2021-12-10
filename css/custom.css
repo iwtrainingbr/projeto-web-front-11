@@ -6,7 +6,7 @@ body {
     background-color: #00E6F0;
 }
 
-form {
+form.form-login {
     background-color: #fff;
     border-radius: 1rem;
     width: 25rem;

@@ -1,6 +1,6 @@
 function login() {
     return `
-    <form class="bg-white p-3 login" onsubmit="changeContent('login')">
+    <form class="bg-white p-3 login form-login" onsubmit="changeContent('login')">
 
         <div><img src="img/we_match!02.png" class="mx-auto d-block mt-2 pt-2 logo-login"></div>
 
