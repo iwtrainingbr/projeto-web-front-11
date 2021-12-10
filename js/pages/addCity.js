@@ -34,13 +34,14 @@ function addCity() {
 
             <label for="city_uf">Estado</label>
             <input id="city_uf" class="form-control mb-3" placeholder="UF da Cidade" required>
-
             <br>
             <button class="btn btn-dark">ENVIAR</button>
           </form>
         </div>
       </div>
-
+      <div class="col-6">
+        <img width="500px" src="img/city/city.svg">
+      </div>
     </section>
   `;
 }

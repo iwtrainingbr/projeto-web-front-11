@@ -1,7 +1,18 @@
-function listQuestions() {
-  fetch (API_URL+'/questions.json')
-    .then(response => response.json())
-    .then(questions => {
+const removeQuestion = (id) => {
+    fetch (API_URL+ `/questions/${id}.json`,{
+      method: 'DELETE'
+    });
+    alert('Pronto, pergunta excluída');
+
+    findQuestions();
+};
+
+  const findQuestions = () => {
+    fetch(API_URL+'/questions.json')
+      .then(response => response.json())
+      .then(questions => {
+        document.getElementById('table_questions').innerHTML = '';
+
       for (let id in questions) {
         document.getElementById('table_questions').innerHTML += `
           <tr>
@@ -9,15 +20,19 @@ function listQuestions() {
             <td>${questions[id].category}</td>
             <td>
               <button class='btn btn-dark'>Editar</button>
-              <button class='btn btn-danger'>Excluir</button>
+              <button onclick="removeQuestion('${id}')" type="button" class='btn btn-danger'>Excluir</button>
             </td>
           </tr>
         `;
       }
     });
+  }
+function listQuestions (){
+   findQuestions ();
 
-  return `
+    return `
     ${navbar()}
+    ${editQuestionModal()}
     <hr>
     <h1>Listar Perguntas</h1>
     <hr>

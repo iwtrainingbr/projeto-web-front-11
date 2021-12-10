@@ -36,11 +36,18 @@ function addQuestions() {
             <input id="questions_questions" class="form-control mb-3" placeholder="Pergunta" required>
 
             <br>
-            <button class="btn btn-dark">ENVIAR</button>
+            <button type="button" class="btn btn-success">Enviar</button>
           </form>
         </div>
       </div>
 
+      <div class="col-6">
+        <img src="img/question.svg" alt="" width="100%">
+      </div>
+
     </section>
+
+
+
   `;
 }
