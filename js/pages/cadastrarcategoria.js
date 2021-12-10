@@ -31,6 +31,7 @@ function cadastrarcategoria() {
         }
         img {
           width: 500px;
+          padding-top: 150px;
         }
 
       </style>
@@ -40,7 +41,7 @@ function cadastrarcategoria() {
             <div>
 
                 <form class="form-control" method="post" id="form_category" action="#" onsubmit="saveCategory()">
-                              <h2>Cadastrar Categoria</h2>
+                    <h2>Cadastrar Categoria</h2>
                      <br>
                     <label for="nome">Nome</label>
                      <input id="category_name" class="form-control" type="text" name="nome" placeholder="Ex: Musica" required>
@@ -57,6 +58,8 @@ function cadastrarcategoria() {
          <article class="col-6">
             <img src="img/ilustras/musica.png">
          </article>
+      </main>
+
       ${footer()}
     `;
 
