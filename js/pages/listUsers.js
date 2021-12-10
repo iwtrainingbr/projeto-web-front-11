@@ -5,7 +5,7 @@ function listUsers(){
     for (let id in users) {
       document.getElementById('table_users').innerHTML += `
       <tr>
-        <td>${users[id].photo}</td>
+        <td><img src="${users[id].photo}" width = '50'></td>
         <td>${users[id].name}</td>
         <td>${users[id].city}</td>
         <td>${users[id].status}</td>
@@ -29,10 +29,11 @@ return `
     <table class="table table-hover table-striped">
       <thead class="table-dark">
         <tr>
-          <th>photo</th>
-          <th>name</th>
-          <th>city</th>
-          <th>status</th>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>Cidade</th>
+          <th>Status</th>
+          <th>Ações</th>
         </tr>
       </thead>
 
