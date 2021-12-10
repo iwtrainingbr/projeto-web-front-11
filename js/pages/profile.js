@@ -16,6 +16,7 @@ function profile() {
 
         img {
           width: 500px;
+          padding-top: 150px;
         }
       </style>
 
@@ -40,7 +41,7 @@ function profile() {
               <input class="form-control" type="text" id="form-senha" name="senha" pattern="[0-9]{11}" placeholder="Ex: 12312312312">
               <br>
 
-              <button class="btn btn-outline-dark">Salvar alterações</button>
+              <button class="btn btn-info">Salvar alterações</button>
             </form>
           </div>
         </section>
