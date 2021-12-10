@@ -2,7 +2,7 @@ function login() {
     return `
     <form class="bg-white p-3 login" onsubmit="changeContent('login')">
 
-        <div><img src="img/we_match!02.png" class="mx-auto d-block mt-2 pt-2"></div>
+        <div><img src="img/we_match!02.png" class="mx-auto d-block mt-2 pt-2 logo-login"></div>
 
         <h3 class="text-center mt-2">Fazer login</h4>
         <h6 class="text-center">Ir para o We Match!</h5><br>
