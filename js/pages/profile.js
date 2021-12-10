@@ -16,6 +16,7 @@ function profile() {
 
         img {
           width: 500px;
+          padding-top: 150px;
         }
       </style>
 
