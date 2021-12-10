@@ -18,7 +18,7 @@ function navbar() {
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" onclick="changeContent('profile')" href="#">Meu perfil</a></li>
           <li><a class="dropdown-item" onclick="changeContent('contact')" href="#">Contato</a></li>
-          <li><a class="dropdown-item" onclick="changeContent('users')" href="#">Usuário</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('listUsers')" href="#">Usuário</a></li>
         </ul>
       </div>
 

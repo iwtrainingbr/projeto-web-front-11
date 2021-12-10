@@ -3,7 +3,7 @@ function listUsers(){
   .then(response => response.json())
   .then(users => {
     for (let id in users) {
-      document.getElementById('table_users').innerHTML =+ `
+      document.getElementById('table_users').innerHTML += `
       <tr>
         <td>${users[id].photo}</td>
         <td>${users[id].name}</td>
@@ -15,8 +15,9 @@ function listUsers(){
           </td>
       </tr>
         `;
-  }
-)};
+      }
+  });
+
 
 return `
   ${navbar()}
@@ -35,7 +36,7 @@ return `
         </tr>
       </thead>
 
-        <tbody id="users">
+      <tbody id="table_users">
 
       </tbody>
 
