@@ -1,23 +1,24 @@
 function listQuestions() {
-  fetch (API_URL+'/questions.json')
-    .then(response => response.json())
-    .then(questions => {
-      for (let id in questions) {
-        document.getElementById('table_questions').innerHTML += `
+    fetch(API_URL + '/questions.json')
+        .then(response => response.json())
+        .then(questions => {
+            for (let id in questions) {
+                document.getElementById('table_questions').innerHTML += `
           <tr>
             <td>${questions[id].name}</td>
             <td>${questions[id].category}</td>
             <td>
-              <button class='btn btn-dark'>Editar</button>
+              <button class='btn btn-dark' data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
               <button class='btn btn-danger'>Excluir</button>
             </td>
           </tr>
         `;
-      }
-    });
+            }
+        });
 
-  return `
+    return `
     ${navbar()}
+    ${editQuestionModal()}
     <hr>
     <h1>Listar Perguntas</h1>
     <hr>
