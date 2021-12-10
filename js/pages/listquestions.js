@@ -19,7 +19,7 @@ const removeQuestion = (id) => {
             <td>${questions[id].name}</td>
             <td>${questions[id].category}</td>
             <td>
-              <button  data-bs-toggle="modal" data-bs-target="#exampleModal" class='btn btn-dark'>Editar</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class='btn btn-dark'>Editar</button>
               <button onclick="removeQuestion('${id}')" type="button" class='btn btn-danger'>Excluir</button>
             </td>
           </tr>
