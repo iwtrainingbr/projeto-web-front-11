@@ -55,5 +55,6 @@ const findCategory = () => {
         </tbody>
       </table>
     </section>
+    ${footer()}
   `;
 }

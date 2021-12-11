@@ -43,6 +43,6 @@ return `
 
     </table>
   </article>
-
+${footer()}
 `;
 }

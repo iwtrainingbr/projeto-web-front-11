@@ -114,5 +114,6 @@ function listCities() {
         </tbody>
       </table>
     </section>
+    ${footer()}
   `;
 }
