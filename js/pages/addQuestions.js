@@ -47,7 +47,7 @@ function addQuestions() {
 
     </section>
 
-
+${footer()}
 
   `;
 }

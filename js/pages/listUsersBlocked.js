@@ -41,6 +41,6 @@ return `
 
     </table>
   </article>
-
+${footer()}
 `;
 }
