@@ -66,6 +66,8 @@ function listUsers() {
 
     </table>
   </article>
-${footer()}
+  ${footer()}
 `;
+
+
 }

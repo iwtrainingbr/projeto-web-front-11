@@ -60,7 +60,8 @@ function cadastrarcategoria() {
          </article>
       </main>
 
-      ${footer()}
+
     `;
 
     }
+    // function cadastrarcategoria() {
