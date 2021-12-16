@@ -3,7 +3,7 @@ const saveQuestions = () => {
 
   let newQuestions = {
     category: document.getElementById('questions_category').value,
-    name: document.getElementById('questions_questions').value
+    name: document.getElementById('questions_questions').value,
   };
 
   fetch(API_URL+'/questions.json', {
@@ -11,7 +11,7 @@ const saveQuestions = () => {
     body: JSON.stringify(newQuestions),
   });
 
-  alert('Pronto, nova pergunta inserida');
+  alert('Pronto, nova pergunta inserida')
 
   document.getElementById('form_questions').reset();
 };
@@ -46,8 +46,7 @@ function addQuestions() {
       </div>
 
     </section>
-
-${footer()}
+  ${footer()}
 
   `;
 }
