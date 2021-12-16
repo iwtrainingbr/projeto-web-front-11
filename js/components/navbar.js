@@ -19,6 +19,7 @@ function navbar() {
           <li><a class="dropdown-item" onclick="changeContent('profile')" href="#">Meu perfil</a></li>
           <li><a class="dropdown-item" onclick="changeContent('contact')" href="#">Contato</a></li>
           <li><a class="dropdown-item" onclick="changeContent('listUsers')" href="#">Usuário</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('listUsersBlocked')" href="#">Usuários Bloqueados</a></li>
         </ul>
       </div>
 
@@ -65,6 +66,17 @@ function navbar() {
         </ul>
       </div>
 
+      <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Bloquear Usuário
+
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="changeContent('UsersBlocked')" href="#">Bloquear Usuário.</a></li>
+          <li><a class="dropdown-item" onclick="changeContent('listUsersBlocked')" href="#">Usuários Bloqueados</a></li>
+        </ul>
+      </div>
+      
       <div class="btn-group">
         <button class="btn btn-danger" onclick="changeContent('login')" type="button" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
           Sair

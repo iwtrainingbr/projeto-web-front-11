@@ -47,5 +47,6 @@ function addUser() {
         <img src="img/city/cities.svg" alt="" width="80%">
       </div>
     </section>
+    ${footer()}
   `;
 }

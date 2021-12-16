@@ -110,5 +110,6 @@ function listQuestions (){
         </tbody>
       </table>
     </section>
+    ${footer()}
   `;
 }

@@ -43,5 +43,6 @@ function addCity() {
         <img width="500px" src="img/city/city.svg">
       </div>
     </section>
+    ${footer()}
   `;
 }

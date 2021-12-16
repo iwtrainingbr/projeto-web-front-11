@@ -46,7 +46,6 @@ function addQuestions() {
       </div>
 
     </section>
-
   ${footer()}
 
   `;
