@@ -1,5 +1,5 @@
 body {
-    background-color: #DEDEDE;
+    background-color: #00AEEF;
 }
 
 .login {
@@ -10,7 +10,7 @@ form.form-login {
     background-color: #fff;
     border-radius: 1rem;
     width: 25rem;
-    height: 27rem;
+    height: 29rem;
     display: block;
     margin-right: auto;
     margin-left: auto;
