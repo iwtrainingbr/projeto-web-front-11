@@ -21,9 +21,9 @@ function profile() {
       </style>
 
       <main class="row">
-        
+
         <section class="col-6">
-            
+
           <div>
             <form action="#" id="form-card" class="form-control" method="post">
               <h2>Editar perfil</h2>
@@ -47,9 +47,9 @@ function profile() {
         </section>
         <article class="col-6">
           <img src="img/gato.jpg">
-        </article>       
+        </article>
       </main>
 
-      ${footer()}
+    
   `
 }
